@@ -32,7 +32,7 @@ async function removeBackground() {
 
   spinner.style.display = 'block';
 
-  const response = await fetch('https://bg-remover-backend-oqgc.onrender.com/remove-bg', {
+  const response = await fetch("https://bg-remover-backend-oqgc.onrender.com/remove-bg", {
     method: 'POST',
     body: formData
   });
