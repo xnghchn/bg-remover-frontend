@@ -32,10 +32,13 @@ async function removeBackground() {
 
   spinner.style.display = 'block';
 
-  const response = await fetch("https:// 192.168.29.88:8000/remove-bg", {
-    method: 'POST',
-    body: formData
-  });
+fetch("https://bg-remover-backend-oqgc.onrender.com/remove-bg", {
+
+
+  method: 'POST',
+  body: formData
+});
+
 
   const blob = await response.blob();
   const img = document.getElementById('preview');
